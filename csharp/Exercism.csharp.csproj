@@ -49,11 +49,14 @@
     <Compile Include="example\ExampleTests.cs" />
     <Compile Include="hello-world\HelloWorld.cs" />
     <Compile Include="hello-world\HelloWorldTest.cs" />
+    <Compile Include="leap\Leap.cs" />
+    <Compile Include="leap\LeapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bob\README.md" />
     <None Include="hello-world\README.md" />
+    <None Include="leap\README.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

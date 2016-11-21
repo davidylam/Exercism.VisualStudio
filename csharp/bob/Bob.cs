@@ -6,6 +6,23 @@ using System.Threading.Tasks;
 
 public class Bob
 {
+    static public string Hey(string phrase)
+    {
+        phrase = phrase.Trim();
+        bool isShouting = phrase == phrase.ToUpper();
+        bool hasLetters = phrase.Any(Char.IsLetter);
+        bool isQuestion = phrase.EndsWith("?", StringComparison.Ordinal);
+
+        if (phrase == "")
+            return "Fine. Be that way!";
+        else if (isShouting && hasLetters)
+            return "Whoa, chill out!";
+        else if (isQuestion)
+            return "Sure.";
+        else
+            return "Whatever.";
+    }
+    /*
     public static string Hey(string say)
     {
         string reply = string.Empty;
@@ -46,4 +63,5 @@ public class Bob
         }
         return allUpper;
     }
+    */
 }
